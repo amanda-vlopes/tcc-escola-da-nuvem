@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.cdnfonts.com/css/code-next-trial');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
   margin: 0;
@@ -7,10 +8,10 @@
   border:0;
   box-sizing: border-box;
   /* font-family: 'Roboto', sans-serif; */
-  font-family: 'Code Next-Trial', sans-serif;
-  /* font-family: 'Code Next', sans-serif; */
-  font-weight: 400;
-  color: #202B3C;
+  /* font-family: 'Philosopher', sans-serif; */
+  font-family: 'Istok Web', sans-serif;
+  /* font-weight: 400; */
+  color: #262f3e;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
 }
 
 h1{
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .div_header {
@@ -62,6 +63,7 @@ h1{
   right: 35px;
   top: 90px;
   pointer-events: none;
+  font-weight: 600;
 }
 
 .integrante_image:hover span {
