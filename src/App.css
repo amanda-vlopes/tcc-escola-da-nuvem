@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border:0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.div_header {
+  height: 150px;
+  /* background-color: darkgrey; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.div_title {
+  text-align: center;
+}
+
+#logo-aws {
+  width: 110px;
+  height: 70px;
+}
+
+.image-curriculo {
+  border-radius: 50%;
+  width: 200px;
+}
+
+.image-curriculo:hover {
+  opacity: 0.3;
+}
+
+.integrante_image {
+  position: relative;
+}
+
+.integrante_image span {
+  opacity: 0;
+  position: absolute;
+  right: 35px;
+  top: 90px;
+}
+
+.integrante_image:hover span {
+  opacity: 1;
+}
+
+.div_section {
+  margin-top: 150px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.div_integrante {
+  padding: 50px;
+}
+
+.integrante {
+  text-decoration: none;
+  color: black;
+}
+
+.div_curriculos {
+  display: flex;
+  justify-content: center;
+}

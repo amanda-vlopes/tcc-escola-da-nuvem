@@ -1,0 +1,70 @@
+body {
+  background-color: #f1eff1;
+}
+
+.curriculo-header {
+  background-color: #364556;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 70px;
+}
+/* Estilos para os títulos das seções */
+h1 {
+  font-size: 28px;
+  
+}
+
+.section-title {
+  text-align: center;
+  font-size: 24px;
+  background-color: #a8b2bc;
+  color: #333;
+}
+
+/* Estilos para o container principal */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+}
+#contact-info{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para os links de contato */
+.contact a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para as listas */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+/* Estilos para seções específicas */
+#skills ul,
+#certificates ul,
+#soft-skills ul {
+  padding-left: 20px;
+}
