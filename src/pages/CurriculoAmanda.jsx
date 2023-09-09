@@ -16,7 +16,7 @@ const CurriculoAmanda = () => {
   };
 
   return (
-    <CSSTransition in={showPage} timeout={300} classNames="page" unmountOnExit>
+    <CSSTransition in={showPage} timeout={400} classNames="page" unmountOnExit>
       <>
         <h1 className="curriculo-header">
           <span className="material-symbols-outlined btn-voltar" onClick={handleClick}>

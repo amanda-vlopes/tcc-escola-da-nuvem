@@ -39,6 +39,7 @@ h1 {
   font-size: 24px;
   background-color: #a8b2bc;
   color: #333;
+  border-radius: 4px;
 }
 
 /* Estilos para o container principal */
@@ -49,6 +50,7 @@ h1 {
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   margin-top: 100px;
+  border-radius: 10px;
 }
 #contact-info{
   text-align: center;

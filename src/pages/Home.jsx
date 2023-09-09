@@ -10,7 +10,7 @@ const Home = () => {
   }, []);
   
     return (
-      <CSSTransition in={showPage} timeout={400} classNames="page" unmountOnExit>
+      <CSSTransition in={showPage} timeout={500} classNames="page" unmountOnExit>
         <>
         <div className='div_header'>
           <img src="./src/images/logo-escola-da-nuvem.png" alt="logo-escola-da-nuvem" id='logo-escola-da-nuvem' />
@@ -36,17 +36,17 @@ const Home = () => {
           <Link to={'/curriculo-amanda'} className='integrante'> 
             <div className='div_integrante'>
               <div className='integrante_image'>
-                <img src="./src/images/amanda.jpeg" alt="alice" className='image-curriculo' />
+                <img src="./src/images/amanda.jpeg" alt="amanda" className='image-curriculo' />
                 <span>VER CURRÍCULO</span>
               </div>
               <h3>Amanda</h3>
             </div>
           </Link>
 
-          <Link to={'/curriculo-amanda'} className='integrante'>
+          <Link to={'/curriculo-hugo'} className='integrante'>
             <div className='div_integrante'>
               <div className='integrante_image'>
-                <img src="./src/images/hugo.jpeg" alt="alice" className='image-curriculo' />
+                <img src="./src/images/hugo.jpeg" alt="hugo" className='image-curriculo' />
                 <span>VER CURRÍCULO</span>
               </div>
                 <h3>Hugo</h3>
