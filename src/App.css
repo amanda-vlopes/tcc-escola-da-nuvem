@@ -92,6 +92,14 @@ h1{
   justify-content: center;
 }
 
+footer{
+  position: absolute;
+  bottom: 0;
+  padding: 50px;
+  width: 100%;
+  text-align: center;
+}
+
 /* TRANSITION */
 .page-enter {
   opacity: 0;

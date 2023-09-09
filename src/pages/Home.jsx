@@ -54,6 +54,7 @@ const Home = () => {
           </Link>
           </div>
         </div>
+        <footer>© 2023 Escola da Nuvem | Desenvolvido em React por <a href="https://www.linkedin.com/in/amanda-lopes-/" target="_blank" rel="noreferrer">Amanda Lopes</a> </footer>
         </>
       </CSSTransition>
     )
