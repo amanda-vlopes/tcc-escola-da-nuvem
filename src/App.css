@@ -8,14 +8,18 @@
   box-sizing: border-box;
   /* font-family: 'Roboto', sans-serif; */
   font-family: 'Code Next-Trial', sans-serif;
-  font-family: 'Code Next', sans-serif;
-  color: #4d4d4d;
-
+  /* font-family: 'Code Next', sans-serif; */
+  font-weight: 400;
+  color: #202B3C;
 }
 
 body {
   height: 100vh;
   width: 100vw;
+}
+
+h1{
+  font-weight: 400;
 }
 
 .div_header {
