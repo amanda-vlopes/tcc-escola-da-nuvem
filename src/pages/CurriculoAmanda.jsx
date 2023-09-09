@@ -1,18 +1,29 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import "./Curriculo.css";
 
 const CurriculoAmanda = () => {
   const [showPage, setShowPage] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setShowPage(true);
   }, []);
-  
+
+  const handleClick = () => {
+    navigate("/");
+  };
+
   return (
     <CSSTransition in={showPage} timeout={300} classNames="page" unmountOnExit>
       <>
-        <h1 className="curriculo-header">Amanda Vitor Lopes</h1>
+        <h1 className="curriculo-header">
+          <span className="material-symbols-outlined btn-voltar" onClick={handleClick}>
+            arrow_back
+          </span>
+          Amanda Vitor Lopes
+        </h1>
         <div className="container">
           <section id="contact-info">
             <h2 className="section-title">Informações de Contato</h2>

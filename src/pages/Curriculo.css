@@ -13,6 +13,21 @@ body {
   position: fixed;
   height: 70px;
 }
+
+.btn-voltar{
+  cursor: pointer;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  position: absolute;
+  left: 20px;
+  transition: all 0.3s;
+}
+
+.btn-voltar:hover{
+  filter: drop-shadow(4px 4px 10px rgb(255, 255, 255));
+}
+
 /* Estilos para os títulos das seções */
 h1 {
   font-size: 28px;
