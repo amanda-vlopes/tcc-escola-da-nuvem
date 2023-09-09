@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/code-next-trial');
 
 * {
   margin: 0;
   padding: 0;
   border:0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Code Next-Trial', sans-serif;
+  font-family: 'Code Next', sans-serif;
+
 }
 
 body {
@@ -34,14 +38,17 @@ body {
 .image-curriculo {
   border-radius: 50%;
   width: 200px;
+  transition: all 0.3s;
 }
 
 .image-curriculo:hover {
   opacity: 0.3;
+  
 }
 
 .integrante_image {
   position: relative;
+  filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.5));
 }
 
 .integrante_image span {
@@ -49,6 +56,7 @@ body {
   position: absolute;
   right: 35px;
   top: 90px;
+  pointer-events: none;
 }
 
 .integrante_image:hover span {

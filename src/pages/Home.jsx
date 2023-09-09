@@ -14,13 +14,13 @@ export default class Home extends Component {
           <img src="./src/images/logo-aws.png" alt="logo-aws" id='logo-aws' />
         </div>
         <div className='div_section'>
-          <h2>Grupo 3 - Curriculos</h2>
+          <h2>Grupo 3 - Currículos</h2>
           <div className='div_curriculos'>
           <Link to={'/curriculo-alice'} className='integrante'>
             <div className='div_integrante'>
               <div className='integrante_image'>
                 <img src="./src/images/alice.jpeg" alt="alice" className='image-curriculo' />
-                <span>VER CURRICULO</span>
+                <span>VER CURRÍCULO</span>
               </div>
                 <h3>Maria Alice</h3>
             </div>
