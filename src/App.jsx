@@ -8,14 +8,12 @@ import Home from './pages/Home';
 function App() {
 
   return (
-    <>
-    <Routes>
+    <Routes >
       <Route path='/' element={ <Home /> } />
       <Route path='/curriculo-alice' element={ <CurriculoAlice /> } />
       <Route path='/curriculo-amanda' element={ <CurriculoAmanda /> } />
       <Route path='/curriculo-hugo' element={ <CurriculoHugo /> } />
     </Routes>
-    </>
   )
 }
 

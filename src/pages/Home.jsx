@@ -1,10 +1,17 @@
-import { Component } from 'react';
+import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
+import { CSSTransition } from "react-transition-group";
 
-export default class Home extends Component {
-  render() {
+const Home = () => {
+  const [showPage, setShowPage] = useState(false);
+
+  useEffect(() => {
+    setShowPage(true);
+  }, []);
+  
     return (
-      <>
+      <CSSTransition in={showPage} timeout={400} classNames="page" unmountOnExit>
+        <>
         <div className='div_header'>
           <img src="./src/images/logo-escola-da-nuvem.png" alt="logo-escola-da-nuvem" id='logo-escola-da-nuvem' />
           <div className='div_title'>
@@ -47,7 +54,9 @@ export default class Home extends Component {
           </Link>
           </div>
         </div>
-      </>
+        </>
+      </CSSTransition>
     )
   }
-}
+
+  export default Home;
