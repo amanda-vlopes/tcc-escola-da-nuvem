@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
+import logoEmail from '../images/logo-email.png';
+import logoGitHub from '../images/logo-github.png';
+import logoLinkedin from '../images/logo-linkedin.png';
+import logoWpp from '../images/logo-whatsapp.png';
+import curriculoHugo from '../utils/Curriculo_Hugo.pdf';
 import "./Curriculo.css";
 
 const CurriculoHugo = () => {
@@ -24,30 +29,38 @@ const CurriculoHugo = () => {
           >
             arrow_back
           </span>
-          Hugo Leonardo Marques Brambati
+          HUGO LEONARDO MARQUES BRAMBATI
         </h1>
         <div className="container">
           <section id="contact-info">
             <h2 className="section-title">Informações de Contato</h2>
             <br />
-            <p>
-              <strong>Endereço:</strong> Flamengo, Rio de Janeiro/RJ
-              <br />
-              <strong>Telefone:</strong> (21) 98628-7207
-              <br />
-              <strong>Email:</strong>{" "}
-              <a href="mailto:hugobrambatidev@gmail.com">
-                hugobrambatidev@gmail.com
-              </a>{" "}
-              <br />
-              <strong>Linkedin:</strong>{" "}
-              <a href="https://www.linkedin.com/in/hugo-brambati/">
-                linkedin.com/in/hugo-brambati/
-              </a>
-              <br />
-              <strong>GitHub:</strong>{" "}
-              <a href="github.com/hugobrambati">github.com/hugobrambati</a>
-            </p>
+            <h3>Flamengo, Rio de Janeiro/RJ - (21) 98628-7207 - hugobrambatidev@gmail.com</h3>
+            <br />
+            <div className="icons_info">
+              <div className="icons">
+                <div className="div_icons">
+                  <Link to="https://api.whatsapp.com/send?phone=5521986287207" target="_blank">
+                    <img src={logoWpp} alt="" className="img_icons"/>
+                  </Link>
+                </div>
+                <div className="div_icons">
+                  <Link to="https://www.linkedin.com/in/hugo-brambati/" target="_blank">
+                    <img src={logoLinkedin} alt="" className="img_icons"/>
+                  </Link>
+                </div>
+                <div className="div_icons">
+                  <Link to="https://github.com/hugobrambati" target="_blank">
+                    <img src={logoGitHub} alt="" className="img_icons"/>
+                  </Link>
+                </div>
+                <div className="div_icons">
+                <Link to="mailto:hugobrambatidev@gmail.com">
+                  <img src={logoEmail} alt="" className="img_icons"/>
+                </Link>
+                </div>
+              </div>
+            </div>
             <br />
           </section>
 
@@ -207,6 +220,15 @@ const CurriculoHugo = () => {
             </ul>
             <br />
           </section>
+
+          <div className="div_button">
+            <button className="button_download">
+              <a href={curriculoHugo} target="_blank" rel="noopener noreferrer">
+                DOWNLOAD CV
+                <span className="material-symbols-outlined">download</span>
+              </a>
+            </button>
+          </div>
         </div>
       </>
     </CSSTransition>

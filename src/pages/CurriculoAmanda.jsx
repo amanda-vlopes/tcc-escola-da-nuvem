@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
+import logoEmail from '../images/logo-email.png';
+import logoGitHub from '../images/logo-github.png';
+import logoLinkedin from '../images/logo-linkedin.png';
+import logoWpp from '../images/logo-whatsapp.png';
+import curriculoAmanda from '../utils/Curriculo_Amanda_Lopes.pdf';
 import "./Curriculo.css";
 
 const CurriculoAmanda = () => {
@@ -18,36 +23,42 @@ const CurriculoAmanda = () => {
   return (
     <CSSTransition in={showPage} timeout={400} classNames="page" unmountOnExit>
       <>
-        <h1 className="curriculo-header">
-          <span className="material-symbols-outlined btn-voltar" onClick={handleClick}>
-            arrow_back
-          </span>
-          Amanda Vitor Lopes
-        </h1>
+      <div className="curriculo-header">
+        <span className="material-symbols-outlined btn-voltar" onClick={handleClick}>
+          arrow_back
+        </span>
+          <h1>AMANDA VITOR LOPES</h1>
+      </div>
         <div className="container">
           <section id="contact-info">
             <h2 className="section-title">Informações de Contato</h2>
             <br />
-            <p>
-              <strong>Endereço:</strong> Cataguases/MG
-              <br />
-              <strong>Telefone:</strong> (31) 99526-6535
-              <br />
-              <strong>Email:</strong>{" "}
-              <a href="mailto:amandavitor@hotmail.com">
-                amandavitor@hotmail.com
-              </a>{" "}
-              <br />
-              <strong>Linkedin:</strong>{" "}
-              <a href="https://www.linkedin.com/in/amanda-lopes-/">
-                linkedin.com/in/amanda-lopes-/
-              </a>
-              <br />
-              <strong>GitHub:</strong>{" "}
-              <a href="https://github.com/amanda-vlopes">
-                github.com/amanda-vlopes
-              </a>
-            </p>
+            <h3>Cataguases/MG - (31) 99526-6535 - amandavitor@hotmail.com</h3>
+            <br />
+            <div className="icons_info">
+              <div className="icons">
+                <div className="div_icons">
+                  <Link to="https://api.whatsapp.com/send?phone=5531995266535" target="_blank">
+                    <img src={logoWpp} alt="" className="img_icons"/>
+                  </Link>
+                </div>
+                <div className="div_icons">
+                  <Link to="https://www.linkedin.com/in/amanda-lopes-/" target="_blank">
+                    <img src={logoLinkedin} alt="" className="img_icons"/>
+                  </Link>
+                </div>
+                <div className="div_icons">
+                  <Link to="https://github.com/amanda-vlopes" target="_blank">
+                    <img src={logoGitHub} alt="" className="img_icons"/>
+                  </Link>
+                </div>
+                <div className="div_icons">
+                <Link to="mailto:amandavitor@hotmail.com">
+                  <img src={logoEmail} alt="" className="img_icons"/>
+                </Link>
+                </div>
+              </div>
+            </div>
             <br />
           </section>
 
@@ -271,7 +282,18 @@ const CurriculoAmanda = () => {
             </ul>
             <br />
           </section>
+
+          <div className="div_button">
+            <button className="button_download">
+              <a href={curriculoAmanda} target="_blank" rel="noopener noreferrer">
+                DOWNLOAD CV
+                <span className="material-symbols-outlined">download</span>
+              </a>
+            </button>
+          </div>
+          
         </div>
+
       </>
     </CSSTransition>
   );

@@ -133,3 +133,50 @@ footer a:hover{
   transform: translateY(100%);
   transition: opacity 400ms, transform 400ms;
 }
+
+.linha {
+  height: 1px;/*Altura da linha*/
+  width: 800px;
+  background-color: black;
+}
+
+.div_linha {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  #logo-aws {
+    width: 80px;
+    height: 50px;
+  }
+
+  #logo-escola-da-nuvem {
+    width: 100px;
+  }
+
+  .div_header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .div_title {
+    font-size: 12px;
+  }
+
+  .div_title h1, h2 {
+    font-size: 14px;
+  }
+
+  footer {
+    position: absolute;
+    top: 600px;
+  }
+
+  .image-curriculo {
+    width: 100px;
+  }
+
+}
